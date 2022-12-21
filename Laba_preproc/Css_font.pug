@@ -1,0 +1,26 @@
+extends menu
+block menu
+	- var title = "css/Css_font.css"
+	div.grid-container
+		div.menu1
+			a(href="index.html")= "CSS"
+		div.menu2
+			a(href="Var8.html")= "Синтаксис CSS"
+		div.menu3
+			a(href="#")= "Вставка CSS"
+		div.menu4
+			a(href="#")= "CSS текст"
+		div.menu5.active
+			a(href="Css_font.html")= "CSS шрифт"
+		div.menu6
+			a(href="#")= "Блоки"
+		div.img1 
+			img(src="img/css-text-decoration.png")
+		div.img2
+			img(src="img/css-probely.png")
+		div.img3
+			img(src="img/css-text.png")
+		div.tim-one 
+			p.tim-tap <kbd>font</kbd> - универсальное свойство, которое позволяет одновременно задать несколько характеристик шрифта и текста. <br>Синтаксис font: <br><kbd>[font-style||font-variant||font-weight] font-size [/line-height] font-family | inherit</kbd>
+		div.tim-two 
+			p.tim-tap <kbd>font-style</kbd> - определяет начертание шрифта: обычное, курсивное или наклонное. Когда для текста установлено курсивное или наклонное начертание, браузер обращается к системе для поиска подходящего шрифта. Если заданный шрифт не найден, браузер использует специальный алгоритм для имитации нужного вида текста. Результат и качество при этом могут получиться неудовлетворительными, особенно при печати документа. <br>Синтаксис <br><kbd>font-style: normal | italic | oblique | inherit</kbd>

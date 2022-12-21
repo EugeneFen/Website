@@ -1,0 +1,116 @@
+tablar = 30px
+tablar_2 = 20px
+indent = 5px
+style-p(size)
+	padding size
+	margin size 
+color_act =	DarkGray
+procent = 100%
+
+body
+	background: DarkBlue
+img
+	width: 85%
+a
+	text-decoration: none
+	color: black
+.active
+	background color_act
+//a:hover
+	//background: DarkGray;
+.grid-container
+	display: grid
+	grid-template-rows: minmax(10px, 30px) minmax(60x, 100px) minmax(60x, 100px) minmax(100px, 400px)
+	grid-template-columns: repeat(6, 16.6%)
+	margin: auto
+	background: Silver
+	width: 90%
+	grid-template-areas "header1 header2 header3 header4 header5 header6" "galery1 galery1 galery2 galery2 galery3 galery3" "text1 text1 text1 text1 text1 text1" "text text text text text text"
+.grid-container 
+	div
+		text-align: center 
+.grid-container 
+	.menu1
+		grid-area :header1
+		style-p(indent)
+		font-weight : bold
+.grid-container 
+	.menu2
+		grid-area :header2
+		style-p(indent)
+		font-weight : bold
+.grid-container 
+	.menu3
+		grid-area :header3
+		style-p(indent)
+		font-weight : bold
+.grid-container 
+	.menu4
+		grid-area :header4
+		style-p(indent)
+		font-weight : bold
+.grid-container 
+	.menu5
+		grid-area :header5
+		style-p(indent)
+		font-weight : bold
+.grid-container 
+	.menu6
+		grid-area :header6
+		style-p(indent)
+		font-weight : bold
+.grid-container 
+	.img1
+		grid-area : galery1
+		margin: auto
+		padding-left indent
+		width: procent
+.grid-container 
+	.img2
+		grid-area : galery2
+		margin: auto
+		padding-left 3px
+		width: procent
+.grid-container 
+	.img3
+		grid-area : galery3
+		margin: auto
+		width: procent
+.grid-container 
+	.tim-one
+		grid-area :text1
+		line-height: 2.5em
+		text-align: left
+		padding-left tablar
+		padding-right tablar
+		line-height tablar
+.grid-container 
+	.tim-two
+		grid-area :text
+		line-height: 2.5em
+		text-align: left
+		padding-left tablar
+		padding-right tablar
+		line-height tablar
+.tim-tap
+	text-indent: tablar
+@media(max-width: 600px)
+	.grid-container
+		grid-template-rows: repeat(3, 40px) repeat(3, minmax(300px, 440px)) minmax(80px, 190px) minmax(100px, 370px)
+		grid-template-columns: repeat(2, 50%)
+		grid-template-areas: "header1 header2" "header3 header4" "header5 header6" "galery1 galery1" "galery2 galery2" "galery3 galery3" "text1 text1" "text text"
+	img
+		width: 80%
+	.grid-container 
+		.img1
+			margin-top tablar_2
+			padding-left 0px
+	.grid-container 
+		.img2
+			margin-top 10px
+			padding-left 0px
+	.grid-container 
+		.img3
+			margin-top 0px
+	.grid-container
+		width: 98%

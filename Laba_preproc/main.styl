@@ -1,0 +1,112 @@
+tablar = 15px
+tablar_2 = 30px
+indent = 5px
+style-p(size)
+	padding size
+	margin size
+color_act =	DarkGray
+
+body
+	background: DarkBlue
+img
+	width: 90%
+a
+	text-decoration: none
+	color: black
+.active
+	background color_act
+//a:hover
+	//background: DarkGray;
+.grid-container
+	display: grid
+	grid-template-rows: minmax(10px, 30px) minmax(60x, 100px) minmax(60x, 100px) minmax(100px, 400px)
+	grid-template-columns: repeat(6, 16.6%)
+	margin: auto
+	background: Silver
+	width: 90%
+	grid-template-areas "header1 header2 header3 header4 header5 header6" "text text text text text text" "text1 text1 text1 galery galery galery" "video video video video video video"
+.grid-container 
+	div
+		text-align: center  
+.grid-container 
+	.menu1
+		grid-area :header1
+		style-p(indent)
+		font-weight : bold
+.grid-container 
+	.menu2
+		grid-area :header2
+		style-p(indent)
+		font-weight : bold
+.grid-container 
+	.menu3
+		grid-area :header3
+		style-p(indent)
+		font-weight : bold
+.grid-container 
+	.menu4
+		grid-area :header4
+		style-p(indent)
+		font-weight : bold
+.grid-container 
+	.menu5
+		grid-area :header5
+		style-p(indent)
+		font-weight : bold
+.grid-container 
+	.menu6
+		grid-area :header6
+		style-p(indent)
+		font-weight : bold
+.grid-container 
+	.img1
+		grid-area : galery
+		margin: auto
+		width: 100%
+.grid-container 
+	.tim-one
+		grid-area :text
+		line-height: 2.5em
+		text-align: left
+		padding tablar
+		text-indent: tablar_2
+		line-height tablar_2
+.grid-container 
+	.tim-two
+		grid-area :text1
+		line-height: 2.5em
+		text-align: left
+		padding-left tablar
+		padding-right tablar
+		text-indent: tablar_2
+		line-height tablar_2
+.grid-container 
+	.tim-down
+		grid-area : video
+		padding tablar
+		width 50%
+		margin auto	
+  
+@media(max-width: 600px)
+	.grid-container
+		grid-template-rows: repeat(3, 40px) minmax(100px, 120px) minmax(50px, 270px) minmax(100px, 300px) minmax(100px, 200px)
+		grid-template-columns: repeat(2, 50%)
+		grid-template-areas: "header1 header2" "header3 header4" "header5 header6" "text text" "galery galery" "text1 text1" "video video"
+	.grid-container 
+		.img1
+			margin: auto
+	.grid-container 
+		.tim-one
+			margin: auto
+	.grid-container 
+		.tim-two
+			margin: auto
+	.grid-container 
+		.tim-down
+			margin: auto
+			width 100%
+	.grid-container 
+		.img1
+			width: 100%
+	.grid-container
+		width: 98%
